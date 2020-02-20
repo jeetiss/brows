@@ -1,0 +1,16 @@
+{
+  "name": "@brows/client",
+  "version": "0.0.1",
+  "description": "client for broadcast websocket service",
+  "main": "client/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jeetiss",
+  "license": "ISC",
+  "dependencies": {
+    "pusher": "^3.0.0",
+    "pusher-js": "^5.1.1"
+  }
+}

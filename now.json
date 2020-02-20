@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "name": "brows",
+  "builds": [
+    { "src": "api/events.js", "use": "@now/node" }
+  ],
+  "routes": [
+    {
+      "src": "/api/v1/(?<channel>[^/]*)/(?<event>[^/]*)",
+      "methods": ["POST", "OPTIONS"],
+      "dest": "/api/events.js?channel=$channel&event=$event"
+    }
+  ],
+  "env": {
+    "APP_ID": "@app-id",
+    "KEY": "@app-key",
+    "SECRET": "@app-secret",
+    "CLUSTER": "@app-cluster"
+  }
+}
