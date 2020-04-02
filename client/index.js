@@ -1,4 +1,4 @@
-var Pusher = require("pusher-js");
+import Pusher from "pusher-js";
 
 var channels = new Pusher("b99606f098d417058fed", {
   cluster: "eu"
